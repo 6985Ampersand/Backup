@@ -1,0 +1,863 @@
+@font-face {
+  font-family: "Kiwi Maru";
+  src: url(Sources/Kiwi\ maru/KiwiMaru-Regular.ttf) format("truetype"),
+        url(Sources/Kiwi\ maru/KiwiMaru-Light.ttf) format("truetype"),
+        url(Sources/Kiwi\ maru/KiwiMaru-Medium.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: "Kiwi Maru", serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+} 
+
+*{
+ padding: 0%;
+ margin: 0%;
+}
+
+/*Page Intro */
+
+/* Fond étoiles */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+}
+
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+ width: 100%;
+ height: 100%;
+}
+
+/* Contenu au-dessus */
+.contenu {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  
+}
+
+/* Logo */
+.logo-centree {
+width: 206px;
+height: 160px;
+flex-shrink: 0;
+aspect-ratio: 103/80;
+margin: -30px auto 0 auto;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Boutons */
+
+.container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.bouton {
+  color: black;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Kiwi Maru", serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bouton:hover {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.backup {
+display: flex;
+width: 1440px;
+justify-content: center;
+align-items: center;
+gap: 52px;    
+}
+
+.footer {
+ background-color: #778db8;
+ width: 100%;
+ font-size: 8px;
+ font-style: light;
+ justify-content: center;
+ align-items: center;
+ flex-shrink: 0;
+ flex-direction: column;
+ clear: both;
+ display: flex;
+}
+
+.footer-centre {
+ display: flex;
+ width: 100%;
+ height: 100%;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ text-align: center;
+ font-family: "Kiwi Maru";
+ font-size: 8px;
+ font-style: light;
+ font-weight: 100px;
+ line-height: 34px;
+ background: 100%;
+ background-color: #778db8;
+ background-size: 100%;
+ background-position: 100%;
+ padding: 30px;
+
+}
+
+.footer-centre h2 {
+color: #FFF;
+text-align: center;
+font-family: "Kiwi Maru";
+font-size: 14px;
+font-style: light;
+font-weight: 300;
+line-height: 34px; /* 242.857% */
+}
+ 
+.logos-u {
+background-color: #778db8;
+ display: flex;
+ width: 100%;
+ height: 100%;
+ justify-content: center;
+ align-items: center;
+ gap: 30px;
+ padding: 10px 0px 20px 0px;
+}
+
+.logo-CEN {
+width: 100%;
+height: 49px;
+}
+
+.logo-Paris8 {
+width: 100%;
+height: 83px;
+}
+
+ .master {
+    width: 583px;
+    text-align: left;
+    color: #FFF;
+    font-family: "Kiwi Maru";
+    font-size: 14px;
+    font-style:light;
+    font-weight: 100px;
+ }
+
+ .mentions {
+    width: 252px;
+    color: #FFF;
+text-align: center;
+font-family: "Kiwi Maru";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px; /* 212.5% */
+ }
+
+ .cookies {
+    width: 154px;
+    color: #FFF;
+text-align: center;
+font-family: "Kiwi Maru";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px; /* 212.5% */
+ }
+
+ .aide {
+    width: 91px;
+    color: #FFF;
+text-align: center;
+font-family: "Kiwi Maru";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px; /* 212.5% */
+ }
+
+ .contact {
+    width: 151px;
+    color: #FFF;
+text-align: center;
+font-family: "Kiwi Maru";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px; /* 212.5% */
+ }
+
+ /*Page Backup */
+ .navbar {
+display: flex;
+width: 100%;
+height: 90px;
+padding-right: 38px;
+justify-content: center;
+align-items: center;
+gap: 127px;
+flex-shrink: 0;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+font-family: "Kiwi Maru";
+font-size: 16px;
+font-style: normal;
+ }
+
+.logo-navbar {
+width: 120px;
+height: 36px;
+flex-shrink: 0;
+aspect-ratio: 10/3;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.logo-body {
+width: 342px;
+height: 264px;
+flex-shrink: 0;
+aspect-ratio: 57/44;
+filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
+justify-content: center;
+align-items: center;
+gap: 100px;
+flex-direction: column;
+margin: 0 auto;
+}
+
+.logo-centrale {
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40px;
+}
+
+.sous-titre { 
+margin: 0 auto;
+  display: flex;
+width: 773px;
+justify-content: center;
+height: 93px;
+flex-shrink: 0;
+color:#778db8;
+text-align: center;
+font-family: "Kiwi Maru";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px; /* 170% */
+}
+
+.image-chambre {
+display: flex;
+height: 826px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+align-self: stretch;
+padding: 145px 145px;
+}
+
+.paragraphe {
+color: #000;
+font-family: "Kiwi Maru";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px; /* 226.667% */
+padding: 0px 145px;
+padding-bottom: 60px;
+}
+
+ /*Page Conception */
+
+
+.titre-conception {
+display: flex;
+width: 100%;
+height: 164px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #778DB8;
+text-align: center;
+font-family: "Kiwi Maru";
+font-size: 96px;
+font-style: normal;
+font-weight: 500;
+line-height: 62px; /* 64.583% */
+ }
+
+
+.image-ordi {
+display: flex;
+width: 100%;
+height: 10%;
+flex-shrink: 0;
+justify-content: center;
+align-items: center;
+padding-top: 0%;
+}
+
+.colonne1 {
+display: flex;
+padding: 50px;
+align-items: center;
+justify-content: center;
+gap: 59px;
+}
+
+.colonne2 {
+display: flex;
+padding: 50px;
+align-items: center;
+justify-content: center;
+gap: 59px;
+}
+
+.colonne3 {
+display: flex;
+padding: 50px;
+align-items: flex-start;
+justify-content: center;
+gap: 59px;
+}
+
+.animation2D {
+width: 545px;
+height: 332px;
+flex-shrink: 0;
+}
+
+.texte-animation2D {
+flex: 1;
+}
+
+.texte-animation2D h1 {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+color: #BA0058;
+font-family: "Kiwi Maru";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+padding-right: 20px;
+}
+
+.texte-animation2D p {
+width: 600px;
+color: #000;
+font-family: "Kiwi Maru";
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px; /* 226.667% */
+}
+
+ /*Page Ressources */
+
+ .body {
+display: flex;
+width: 100%;
+height: 100%;
+flex-direction: column;
+justify-content: center;
+ }
+
+.contenu-conception {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titre-donnees {
+display: flex;
+width: 100%;
+height: 164px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #778DB8;
+text-align: center;
+font-family: "Kiwi Maru";
+font-size: 50px;
+font-style: normal;
+font-weight: 500;
+line-height: 62px; /* 64.583% */
+padding: auto;
+padding-top: 30px;
+}
+
+.image-lexique {
+display: flex;
+width: 70%;
+height: 10%;
+justify-content: center;
+align-items: flex-start;
+margin: 0 auto;
+padding: 15px 15px;
+gap: 50px;
+
+}
+
+.colonnes-texte {
+display: flex;
+height: 100%;
+justify-content: center;
+gap: 60px;
+padding: 10px 10px 40px 10px;
+}
+
+.colonne-right {
+display: flex;
+height: 100%;
+flex-direction: column;
+justify-content: left;
+align-items: flex-start;
+gap: 10px;
+padding: 10px 10px 10px 10px;
+margin: 0%;
+}
+
+.colonne-left {
+display: flex;
+height: 100%;
+flex-direction: column;
+justify-content: left;
+align-items: flex-start;
+gap: 10px;
+padding: 10px 10px 10px 10px;
+margin: 0%;
+}
+
+.colonne-left h1 {
+padding-bottom: 5px;
+color: #BA0058;
+font-family: "Kiwi Maru";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+padding-right: 20px;
+}
+
+.colonne-left p {
+padding-bottom: 10px;
+}
+
+.colonne-right h1 {
+padding-bottom: 5px;
+color: #BA0058;
+font-family: "Kiwi Maru";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+padding-right: 20px;
+}
+
+.colonne-right p {
+padding-bottom: 10px;
+}
+
+.titre.objets-backup {
+justify-content: center;
+text-align: left;
+height: 100%;
+padding: 10px;
+display: flex;
+}
+
+.titre.objets {
+justify-content: center;
+text-align: left;
+padding: 10px 10px 40px 10px;
+}
+
+.titre.objets-backup h2 {
+color: #778DB8;
+font-family: "Kiwi Maru";
+font-size: 50px;
+font-style: light;
+}
+
+.titre.objets-backup p {
+color: #000;
+font-family: "Kiwi Maru"; 
+font-size: 16px;
+font-style: normal; 
+padding: 40px;
+justify-content: center;
+display: flex;
+height: 100%;
+padding: 10px 80px 20px 80px;
+}
+
+
+.col {
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.image-objet img {
+width: 100%;
+height: auto;
+max-width: 300px; /* adjust */
+}
+
+.polaroid {
+width: 200px;
+height: auto;
+}
+
+.cadenas {
+width: 200px;
+height: auto; 
+}   
+
+.coffre {
+width: 200px;   
+height: auto; 
+}
+.telephone {
+width: 200px;   
+height: auto; 
+}
+
+.batterie {
+width: 200px;
+height: auto; 
+}
+
+.oeufami {
+width: 200px;   
+height: auto; 
+}
+.cartedidentite {
+width: 200px;   
+height: auto; 
+}
+
+.styloplume {
+width: 150px;
+height: auto; 
+}
+
+.forgetmenot {
+width: 150px;
+height: auto; 
+}
+
+.collier {
+width: 150px;
+height: auto; 
+}
+
+.bocal {
+width: 150px;
+height: auto; 
+}
+
+.gomme {
+width: 150px;
+height: auto; 
+}
+
+.bougie {
+width: 60px;
+height: auto; 
+}
+
+.postit {
+width: 150px;
+height: auto; 
+}
+
+.bocal {
+width: 150px;
+height: auto; 
+}
+
+/* espace entre les blocks de texte*/
+
+  #section1 h2,
+  #section2 h2,
+  #section3 h2,
+  #section4 h2 {
+  margin-bottom: 0px; 
+  }
+
+  #section1 p,
+  #section2 p,
+  #section3 p,
+  #section4 p {
+  margin-bottom: 20px; 
+  margin-left: 20px;
+  }
+
+  #section1 h3,
+  #section2 h3, 
+  #section3 h3,
+  #section4 h3 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  }
+
+.mots-clés h1 {
+color: #BA0058;
+font-family: "Kiwi Maru";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+margin-bottom: 10px;
+}
+
+.col.gauche p {
+color: #000;
+font-family: "Kiwi Maru";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+}
+
+.col.right h1 {
+color: #BA0058;
+font-family: "Kiwi Maru";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+margin-bottom: 10px;
+}
+
+.col.right p {
+color: #000;
+font-family: "Kiwi Maru";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+}
+
+.description h1 {
+color: #BA0058;
+font-family: "Kiwi Maru";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+margin-bottom: 10px;
+}
+
+.description p {
+color: #000;
+font-family: "Kiwi Maru";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+}
+
+.ressources h1 {
+color: #BA0058;
+font-family: "Kiwi Maru";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+margin-bottom: 10px;
+}
+
+.ressources p {
+color: #000;
+font-family: "Kiwi Maru";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+}
+
+ /*Page Ressources - objets backup*/ 
+
+ .menu-gauche {
+  display: flex;
+
+}
+
+/* Menu gauche */
+.sidebar {
+  width: 300px;
+  background-color:#fff;
+  color: #FD3397;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 90px;
+  justify-content: center;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #F9E8F3;
+}
+
+.sidebar li:hover {
+  background-color: #F9E8F3;
+}
+
+.sidebar li.active {
+  background-color: #FD3397;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Contenu */
+.content {
+  flex: 1;
+  color: #000;
+  font-family: "Kiwi Maru";
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.content img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.section.active h2 {
+  display: block;
+  font-family: "Kiwi Maru";
+  color:#FD3397;
+}  
+
+ .objets-backup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+ }
+
+ .images-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+ }
+
+  .images-container img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  }
+
+/* Game */
+ /* main-container */
+.main-container {
+  min-height: calc(100vh - 120px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* iframe locked 1280x720 */
+.game-container {
+  width: 1280px;
+  height: 720px;
+  background-color: black;
+  
+}
+
+/* iframe*/
+.game-frame {
+  width: 1280px;
+  height: 720px;
+  border: none;
+  display: block;
+}
+.game-container {
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;  /* scale */
+}
+
+
+
+/* protection*/
+@media (max-width: 1300px), (max-height: 760px) {
+  .game-container {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+}
